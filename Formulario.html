@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="Formulario.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de alunos</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label><br>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" nome="email" id="email"required>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label><strong>Qual(is) o(s) seu(s) aparelho(s) de preferência?</strong></label>
+                <label>
+                    <input type="radio" nome="aparelhos" value="tecido">Tecido Acrobático
+                </label>
+
+                <label>
+                    <input type="radio" nome="aparelhos" value="lira">Lira Acrobática
+                </label>
+
+                <label>
+                    <input type="radio" nome="aparelhos" value="corda">Corda Lisa
+                </label>
+                
+            </div>
+            <br>
+        <div class="campo">
+            <label for="experiencia"><strong>Conta para a gente sobre tua experiência nos aparelhos:</strong>
+                <select id="experiencia">
+                    <option selected desabled value="">Selecione</option>
+                    <option>Nunca fiz nenhum exercício físico.</option>
+                    <option>Faço ou já fiz atividade física, mas não nessa modalidade.</option>
+                    <option>Já tive algum contato com acrobacias aéreas</option>
+                    <option>Treino sempre que posso.</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Qual a sua melhor data de pagamento?</strong></label><br><br>
+                <input type="checkbox" id="dia1" nome="dia1" value="Todo dia 5.">
+                <label for=dia1>Todo dia 5.</label>
+                <input type="checkbox" id="dia2" nome="dia2" value="Todo dia 10.">
+                <label for=dia1>Todo dia 10.</label>
+                <input type="checkbox" id="dia3" nome="dia3" value="Todo dia 15.">
+                <label for=dia1>Todo dia 15.</label>
+            </div>
+        </fieldset>
+        <br>
+    
+        <div>
+            <label><strong>Quer nos contar mais sobre você?</strong></label><br>
+            <textarea row="6" style="width: 26em" id="maisdetalhes" nome="maisdetalhes"></textarea>
+        <br>
+       
+        </div>
+        <br>
+        
+        <div>
+            <button class="botao" type="submit">Concluído</button>
+        </div>
+       
+    </form>
+</body>
+</html>
